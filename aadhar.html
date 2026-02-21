@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aadhaar Card Replica</title>
+
+<style>
+    body {
+        background: #eaeaea;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .aadhaar-card {
+        width: 780px;
+        height: 260px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        padding: 14px;
+        box-sizing: border-box;
+    }
+
+    /* Top Header */
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .gov {
+        color: #2e7d32;
+    }
+
+    .uidai {
+        text-align: right;
+    }
+
+    .uidai span {
+        color: #e65100;
+        font-size: 11px;
+    }
+
+    /* Main Content */
+    .content {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .left {
+        width: 50%;
+        display: flex;
+    }
+
+    .photo {
+        width: 90px;
+        height: 110px;
+        background: #bbb;
+        border: 1px solid #000;
+        margin-right: 10px;
+    }
+
+    .info {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .right {
+        width: 50%;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .qr {
+        width: 90px;
+        height: 90px;
+        background: repeating-linear-gradient(
+            45deg,
+            #000,
+            #000 2px,
+            #fff 2px,
+            #fff 4px
+        );
+        float: right;
+        margin-left: 10px;
+    }
+
+    /* Aadhaar Number */
+    .aadhaar-no {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+        letter-spacing: 2px;
+    }
+
+    /* Divider */
+    .divider {
+        height: 3px;
+        background: linear-gradient(to right, orange, white, green);
+        margin: 6px 0;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        font-size: 12px;
+        color: #d32f2f;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="aadhaar-card">
+
+    <!-- Header -->
+    <div class="top">
+        <div class="gov">भारत सरकार<br>Government of India</div>
+        <div class="uidai">
+            आधार<br>
+            <span>UNIQUE IDENTIFICATION AUTHORITY OF INDIA</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <div class="left">
+            <div class="photo"></div>
+            <div class="info">
+                <strong>Sakhi bai kushwah</strong><br>
+                जन्म तिथि / DOB: 10/10/1989<br>
+                Female / महिला
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="qr"></div>
+            Address: wife of lakhan kushwah<br>
+            village barai<br>
+            post barai tehsil badarwas<br>
+            district shivpuri<br>
+            473885
+        </div>
+
+    </div>
+
+    <!-- Aadhaar Number -->
+    <div class="divider"></div>
+
+    <div class="aadhaar-no">
+        9826 6359 8852
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        आधार – आम आदमी का अधिकार
+    </div>
+
+</div>
+
+</body>
+</html>
+
