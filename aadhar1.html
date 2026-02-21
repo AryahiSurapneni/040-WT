@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aadhaar Card Front</title>
+
+<style>
+    body {
+        background: #9fc9f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .aadhaar {
+        width: 520px;
+        height: 300px;
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+        padding: 14px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    /* Header */
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .emblem {
+        font-size: 26px;
+    }
+
+    .tricolor {
+        flex-grow: 1;
+        height: 20px;
+        background: linear-gradient(to right, orange 33%, white 33%, white 66%, green 66%);
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+        font-size: 12px;
+    }
+
+    /* Content */
+    .content {
+        display: flex;
+        margin-top: 12px;
+    }
+
+    .photo {
+        width: 90px;
+        height: 110px;
+        background: #cfcfcf;
+        border: 1px solid #000;
+        margin-right: 12px;
+    }
+
+    .details {
+        font-size: 13px;
+        line-height: 1.6;
+        width: 60%;
+    }
+
+    .details strong {
+        font-size: 14px;
+    }
+
+    .qr {
+        width: 95px;
+        height: 95px;
+        background: repeating-linear-gradient(
+            45deg,
+            #000,
+            #000 2px,
+            #fff 2px,
+            #fff 4px
+        );
+        margin-left: auto;
+    }
+
+    /* Aadhaar Number */
+    .number {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    /* Bottom Strip */
+    .bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        border-top: 3px solid #c62828;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: #c62828;
+        background: #fff;
+        border-radius: 0 0 14px 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="aadhaar">
+
+    <!-- Header -->
+    <div class="header">
+        <div class="tricolor">
+            भारत सरकार &nbsp; GOVERNMENT OF INDIA
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="photo"></div>
+
+        <div class="details">
+            <strong>XXNAMEXX</strong><br>
+            जन्म तिथि / DOB : DD/MM/YYYY<br>
+            पुरुष / Male
+        </div>
+
+        <div class="qr"></div>
+    </div>
+
+    <!-- Aadhaar Number -->
+    <div class="number">
+        4444 3333 2222
+    </div>
+
+    <!-- Bottom -->
+    <div class="bottom">
+        आधार – आम आदमी का अधिकार
+    </div>
+
+</div>
+
+</body>
+</html>
+
