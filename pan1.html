@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PAN Card Replica</title>
+
+<style>
+    body {
+        background: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .pan-card {
+        width: 520px;
+        height: 330px;
+        background: linear-gradient(to right, #b9d8ee, #7fc1e8);
+        border-radius: 12px;
+        padding: 16px;
+        box-sizing: border-box;
+        color: #000;
+        position: relative;
+    }
+
+    /* Header */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .header-center {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .emblem {
+        font-size: 14px;
+        margin-top: 2px;
+    }
+
+    /* Content */
+    .content {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    .left-section {
+        width: 65%;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .label {
+        font-weight: bold;
+    }
+
+    .pan-number {
+        margin-top: 8px;
+        font-weight: bold;
+        color: #003366;
+    }
+
+    /* Right Section */
+    .right-section {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .qr {
+        width: 70px;
+        height: 70px;
+        background: #ccc;
+        margin-bottom: 12px;
+    }
+
+    .photo {
+        width: 90px;
+        height: 110px;
+        background: #fff;
+        border: 1px solid #000;
+        margin-bottom: 12px;
+    }
+
+    /* Signature */
+    .signature {
+        position: absolute;
+        bottom: 18px;
+        left: 20px;
+        font-size: 12px;
+    }
+
+    .signature-line {
+        margin-top: 12px;
+        width: 150px;
+        border-top: 1px solid #000;
+        font-size: 11px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="pan-card">
+
+    <!-- Header -->
+    <div class="header">
+        <div>आयकर विभाग<br>INCOME TAX DEPARTMENT</div>
+
+        <div>भारत सरकार<br>GOVT. OF INDIA</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <div class="left-section">
+            <div class="label">YOUR NAME HERE</div>
+            <div class="label">YOUR FATHER NAME HERE</div>
+            <div>DD/MM/YYYY</div>
+
+            <div class="pan-number">
+                Permanent Account Number<br>
+                XXXXX0000X
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="qr"></div>
+            <div class="photo"></div>
+        </div>
+
+    </div>
+
+    <!-- Signature -->
+    <div class="signature">
+        Your Signature Here
+        <div class="signature-line">Signature</div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
